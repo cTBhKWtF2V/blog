@@ -1,0 +1,127 @@
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text'), local('CrimsonText-Roman'), url(http://fonts.gstatic.com/s/crimsontext/v6/3IFMwfRa07i-auYR-B-zNRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Crimson Text Semibold'), local('CrimsonText-Semibold'), url(http://fonts.gstatic.com/s/crimsontext/v6/rEy5tGc5HdXy56Xvd4f3I93uLUHnU24AL_1IdxwhTqs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(http://fonts.gstatic.com/s/crimsontext/v6/rEy5tGc5HdXy56Xvd4f3I8hHwsiXhsDb0smKjAA7Bek.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(http://fonts.gstatic.com/s/crimsontext/v6/a5QZnvmn5amyNI-t2BMkWGfrnYWAzH6tTbHZfcsRIsM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Crimson Text Semibold Italic'), local('CrimsonText-SemiboldItalic'), url(http://fonts.gstatic.com/s/crimsontext/v6/4j4TR-EfnvCt43InYpUNDEGjWynV6JUy6bTtUoDwWRw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(http://fonts.gstatic.com/s/crimsontext/v6/4j4TR-EfnvCt43InYpUNDFh3o8VkC1exAYQ700cRowo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+input[type=email]{font-family:'Typewriter Elite W01';
+  font-style:normal;
+  font-weight:200;}
+  ::-webkit-input-placeholder{font-family:'Typewriter Elite W01';
+  font-style:normal;
+  font-weight:200;}
+  p{font-family:'Neue Helvetica W01';
+  font-style:normal;
+  font-weight:300;}
+  .map-legend p{font-family:'Neue Helvetica W01';
+  font-style:Regular;
+  font-weight:600;}
+  #teaser{font-family:'Neue Helvetica W01';
+  font-style:normal;
+  font-weight:200;}
+  input[type=button]{font-family:'Avenir Next W01';
+  font-style:normal;
+  font-weight:800;}
+  .map p{font-family:'Neue Helvetica W01';
+  font-style:normal;
+  font-weight:200;}
+  .timeline .timeline-intro{font-family:'Neue Helvetica W01';
+  font-style:normal;
+  font-weight:200;}
+  .nav .nav-item{font-family:'Neue Helvetica W01';
+  font-style:normal;
+  font-weight:300;}
+  #greeting{font-family:'Avenir Next W01';
+  font-style:normal;
+  font-weight:800;}
+  .logo{font-family:'Neue Helvetica W01';
+  font-style:Regular;
+  font-weight:600;}
+  input[type=submit]{font-family:'Avenir Next W01';
+  font-style:normal;
+  font-weight:800;}
+  .timeline-date{font-family:'Avenir Next W01';
+  font-style:normal;
+  font-weight:800;}
+  .nav .nav-category{font-family:'Avenir Next W01';
+  font-style:normal;
+  font-weight:800;}
+
+@font-face{
+  font-family:"Avenir Next W01";
+  font-style:normal;
+  font-weight:800;
+  src:url("http://fast.fonts.net/dv2/3/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff?d44f19a684109620e4841471ae90e8186df205ea3b7e1c0d250a32d125adc27a69c5a6864d6ab62481f78c18b7a346bdbe432e4146d4f31e17e2d0f3f127f9cf23d3eb0a83dcd737544b96cdb098126fc74e129f8fa8366bbd&projectId=6a2fcf64-6e9c-413e-b235-74d7c0bfc6be") format('woff');}
+  @font-face{
+    font-family:"Avenir Next W01";
+    font-style:normal;
+    font-weight:700;
+    src:url("http://fast.fonts.net/dv2/3/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff?d44f19a684109620e4841471ae90e8186df205ea3b7e1c0d250a32d125adc27a69c5a6864d6ab62481f78c18b7a346bdbe432e4146d4f31e17e2d0f3f127f9cf23d3eb0a83dcd737544b96cdb098126fc74e129f8fa8366bbd&projectId=6a2fcf64-6e9c-413e-b235-74d7c0bfc6be") format('woff');}
+    @font-face{
+      font-family:"Avenir Next W01";
+      font-style:normal;
+      font-weight:600;
+      src:url("http://fast.fonts.net/dv2/3/f26faddb-86cc-4477-a253-1e1287684336.woff?d44f19a684109620e4841471ae90e8186df205ea3b7e1c0d250a32d125adc27a69c5a6864d6ab62481f78c18b7a346bdbe432e4146d4f31e17e2d0f3f127f9cf23d3eb0a83dcd737544b96cdb098126fc74e129f8fa8366bbd&projectId=6a2fcf64-6e9c-413e-b235-74d7c0bfc6be") format('woff');}
+      @font-face{
+        font-family:"Neue Helvetica W01";
+        font-style:normal;
+        font-weight:300;
+        src:url("http://fast.fonts.net/dv2/3/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff?d44f19a684109620e4841471ae90e8186df205ea3b7e1c0d250a32d125adc27a69c5a6864d6ab62481f78c18b7a346bdbe432e4146d4f31e17e2d0f3f127f9cf23d3eb0a83dcd737544b96cdb098126fc74e129f8fa8366bbd&projectId=6a2fcf64-6e9c-413e-b235-74d7c0bfc6be") format('woff');}
+        @font-face{
+          font-family:"Neue Helvetica W01";
+          font-style:Regular;
+          font-weight:600;
+          src:url("http://fast.fonts.net/dv2/3/14ff6081-326d-4dae-b778-d7afa66166fc.woff?d44f19a684109620e4841471ae90e8186df205ea3b7e1c0d250a32d125adc27a69c5a6864d6ab62481f78c18b7a346bdbe432e4146d4f31e17e2d0f3f127f9cf23d3eb0a83dcd737544b96cdb098126fc74e129f8fa8366bbd&projectId=6a2fcf64-6e9c-413e-b235-74d7c0bfc6be") format('woff');}
+          @font-face{
+            font-family:"Neue Helvetica W01";
+            font-style:normal;
+            font-weight:200;
+            src:url("http://fast.fonts.net/dv2/3/50d35bbc-dfd4-48f1-af16-cf058f69421d.woff?d44f19a684109620e4841471ae90e8186df205ea3b7e1c0d250a32d125adc27a69c5a6864d6ab62481f78c18b7a346bdbe432e4146d4f31e17e2d0f3f127f9cf23d3eb0a83dcd737544b96cdb098126fc74e129f8fa8366bbd&projectId=6a2fcf64-6e9c-413e-b235-74d7c0bfc6be") format('woff');}
+            @font-face{
+              font-family:"Typewriter Elite W01";
+              font-style:normal;
+              font-weight:200;
+              src:url("http://fast.fonts.net/dv2/3/c6430c2c-ffa0-4e78-944c-d4a32e777428.woff?d44f19a684109620e4841471ae90e8186df205ea3b7e1c0d250a32d125adc27a69c5a6864d6ab62481f78c18b7a346bdbe432e4146d4f31e17e2d0f3f127f9cf23d3eb0a83dcd737544b96cdb098126fc74e129f8fa8366bbd&projectId=6a2fcf64-6e9c-413e-b235-74d7c0bfc6be") format('woff');}
