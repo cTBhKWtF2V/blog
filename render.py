@@ -58,6 +58,7 @@ outfile.close()
 for t in tags.keys():
 	outfile = open(t+".html",'w')
 	template_values['tag'] = t
+	template_values['posts'] = tags[t]
 	outfile.write(template.render(template_values))
 	outfile.close()
 
