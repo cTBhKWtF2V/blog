@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wen's Blog {% if tag is defined %} ({{tag}}) {% endif %}</title>
+
+<!-- Fonts -->
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<!-- Icons -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet"  href="css/style.css" type="text/css" media="all">
+
+<link id="MonoTypeFontApiFontTracker" type="text/css" rel="stylesheet" href="css/1.css">
+<link type="text/css" rel="stylesheet" href="css/sme-popup.css"></head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row" id="header">
+			<div class="col-sm-5 col-sm-offset-1">
+				<h1>Wen's Blog {% if tag is defined %} ({{tag}}) {% endif %}</h1>
+			</div><!-- /col -->
+			<div class="col-sm-5 form">
+				<a href="" target="_blank">
+					<img class="social-icon" src="images/twitter.svg"></a>
+					<a href="" target="_blank"><img class="social-icon" src="images/facebook.svg"></a>
+					<a href="" target="_blank"><img class="social-icon" src="images/google-plus.svg"></a>
+					<a href=""><img class="social-icon email-icon" src="images/email.svg"></a>
+				</div><!-- /col -->
+			</div><!-- /#header -->
+
+			<div class="row" id="intro" style="padding-top: 145px; padding-bottom: 75px;">
+				<div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2">
+					<div id="greeting">Good day, Last updated on</div>
+					<h1>{{posts[0].weekday}}, {{posts[0].month}} {{posts[0].date.day}}<span class="year">, {{posts[0].date.year}} </span></h1>
+					<div id="intro-line" class="line"></div>
+					<p id="teaser">{{posts[0].title}}</p>
+					<div class="arrow"></div>
+					<div class="arrow-cover"></div>
+					<a href="#{{posts[0].id}}"><div id="arrow-link"></div></a>
+				</div><!-- /col -->
+			</div><!-- /#intro -->
+			{% for post in posts %}
+			<div class="row {{'dark' if loop.index % 2 == 1}}" id="{{post.id}}">
+				<div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+					{% if loop.index == 1 or post.date != posts[loop.index-2].date %}
+					<h1>{{post.weekday}}, {{post.month}} {{post.date.day}}<span class="year">, {{post.date.year}} </span></h1>
+					<div class="line"></div>
+					{% endif %}
+					<h1>{{post.title}}</h1>
+					<h5>
+					{% for t in post.tags %}
+					<a href="{{t}}.html">{{t}}</a> 
+					{% endfor %}
+					</h5>
+					{{post.content|safe}}
+				</div>
+			</div>
+			{% endfor %}
+			</div><!-- /container -->
+
+			<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-59627163-1', 'auto');
+				ga('send', 'pageview');
+			</script>
+		</body>
+		</html>
