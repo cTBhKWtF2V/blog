@@ -15,6 +15,7 @@ class Post:
 	tags = ""
 	content = ""
 
+
 posts = []
 tags = {}
 
@@ -45,7 +46,7 @@ posts.sort(key=lambda x: x.date, reverse=True)
 for t in tags.keys():
 	tags[t].sort(key=lambda x: x.date, reverse=True)
 
-template = JINJA_ENVIORNMENT.get_template('template.html')
+template = JINJA_ENVIORNMENT.get_template('category_template.html')
 
 template_values ={
 	'posts':posts,
@@ -61,6 +62,14 @@ for t in tags.keys():
 	template_values['posts'] = tags[t]
 	outfile.write(template.render(template_values))
 	outfile.close()
+
+template = JINJA_ENVIORNMENT.get_template('post_template.html')
+for post in posts:
+	outfile = open(post.id+".html",'w')
+	template_values['post'] = post
+	outfile.write(template.render(template_values))
+	outfile.close()
+
 
 
 
