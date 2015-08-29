@@ -28,6 +28,8 @@ for file_name in files:
 	with open(file_name,'r') as f:
 		post = Post()
 		post.id = file_name.split('/')[-1]
+		if post.id[-1]=='-':
+			continue
 		date_str = f.readline().split(',')
 		post.date = datetime.date(int(date_str[0]),int(date_str[1]), int(date_str[2]))
 		post.weekday = WEEKDAYS[post.date.weekday()]
