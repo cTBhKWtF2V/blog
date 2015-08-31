@@ -42,7 +42,7 @@
 				</div><!-- /col -->
 			</div><!-- /#intro -->
 			{% for post in posts %}
-			<div class="row {{'dark' if loop.index % 2 == 1}}" id="{{post.id}}">
+			<div class="row" id="{{post.id}}">
 				<div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
 					{% if loop.index == 1 or post.date != posts[loop.index-2].date %}
 					<h1>{{post.weekday}}, {{post.month}} {{post.date.day}}<span class="year">, {{post.date.year}} </span></h1>
